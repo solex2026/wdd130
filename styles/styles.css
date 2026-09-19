@@ -5,21 +5,46 @@ nav {
 
 nav a {
     color: white;
-    display: block;
     padding: 20px;
+    display: block;
+}
+
+main {
+    max-width: 840px;
 }
 
 h1 {
     color: darkblue;
 }
 
-img {
+main img {
     width: 150px;
     height: auto;
-    border: 1px solid blue;
+    border: 1px solid black;
     padding: 2px;
+    box-shadow: 0 0 30px gray;
+}
+
+aside {
+    width: 20rem;
+    margin: 1rem;
+    border: 1px solid black;
+    padding: 1rem;
+    background-color: #eee;
+    color: #333;
+}
+
+aside img {
+    width: 200px;
+    height: auto;
 }
 
 p {
-    padding: 10px;
+    padding: 0;
+}
+
+footer {
+    margin-top: 15px;
+    border-top: 1px solid black;
+    text-align: center;
 }
