@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover RiverRush Rafting, your destination for exciting white water rafting, adventures, unforgettable experiences, and amazing outdoor activities.">
+  <meta name="author" content="Ugbede Yakubu">
+  <title>RiverRush Rafting | About Us</title>
+  <link rel="stylesheet" href="styles/rafting.css">
+</head>
+<body>
+  <header>
+    <img src="images/rafting_logo.jpg" alt="RiverRush Rafting Company Logo">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="trips.html">Trips</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="hero">
+      <img src="images/rafting-background.jpg" alt="People enjoying a white water rafting adventure">
+      <h1>RiverRush Rafting</h1>
+    </div>
+  </main>
+  <footer></footer>
+</body>
+</html>
