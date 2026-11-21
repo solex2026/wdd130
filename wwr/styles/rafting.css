@@ -33,6 +33,7 @@ footer {
 header {
     background-color: var(--primary-color);
     color: var(--accent2-color);
+    border-bottom: 4px solid var(--secondary-color);
 }
 
 h1,
