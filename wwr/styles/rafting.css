@@ -1,14 +1,14 @@
 :root {
-    --primary-color: #055a05; /* forest  green */
-    --secondary-color: #f4a261;/* warm sand */
-    --accent1-color: #264653;/* dark slate blue */
-    --accent2-color: #e9c46a; /* light golden yellow */
-    --heading-font: "Time New Roman", "Georgia" serif;
-    --body-font:Arial, Helvetica, sans-serif;
-}
-
-header {background-color: var(--primary-color);
-    color: var(--accent2-color);
+    --primary-color: #055a05;
+    /* forest green */
+    --secondary-color: #f4a261;
+    /* warm sand */
+    --accent1-color: #264653;
+    /* dark slate blue */
+    --accent2-color: #e9c46a;
+    /* light golden yellow */
+    --heading-font: "Times New Roman", Georgia, serif;
+    --body-font: Arial, Helvetica, sans-serif;
 }
 
 * {
@@ -22,30 +22,41 @@ body {
     color: var(--accent1-color);
 }
 
-header, main, footer {
+header,
+main,
+footer {
     width: 840px;
     margin: 0 auto;
 }
 
-h1, h2 {
+header {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+}
+
+h1,
+h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
 
-nav, p, section, article {
-  margin: 16px;
-  padding: 8px;  
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
 }
 
-socialmedia a {
+.socialmedia a {
     text-decoration: none;
 }
 
-hero {
+.hero {
     position: relative;
 }
 
-hero img {
+.hero img {
     display: block;
     width: 100%;
     height: auto;
@@ -59,15 +70,20 @@ h1 {
     text-align: center;
     opacity: 0.7;
     background-color: var(--accent1-color);
-    color: #fff;/* white text-make sure there is 
-    enough contrast with the background-color */
+    color: #fff;
 }
 
-hero article img {
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background-color: rgba(38, 70, 83, 0.85);
+    color: #fff;
+}
+
+.hero article img {
     float: right;
     width: 125px;
+    margin-left: 12px;
 }
-
-
-
-
