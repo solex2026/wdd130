@@ -1,8 +1,8 @@
 :root {
     --primary-color: #055a05;
     /* forest green */
-
-    /* warm sand */
+    --secondary-color: #f4a261;
+    /* warm sand (restored variable used in header border) */
     --accent1-color: #264653;
     /* dark slate blue */
     --accent2-color: #e9c46a;
@@ -30,10 +30,42 @@ footer {
     margin: 0 auto;
 }
 
+/* --- UPGRADED HEADER: CSS Grid + Flexbox --- */
 header {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
     background-color: var(--primary-color);
     color: var(--accent2-color);
     border-bottom: 4px solid var(--secondary-color);
+    padding: 12px 20px;
+}
+
+header img {
+    width: 100px;
+    height: auto;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+header nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header nav a:hover {
+    background-color: var(--accent2-color);
+    color: var(--accent1-color);
 }
 
 h1,
@@ -50,10 +82,7 @@ article {
     padding: 8px;
 }
 
-.socialmedia a {
-    text-decoration: none;
-}
-
+/* --- HERO SECTION (Preserved from Week 03) --- */
 .hero {
     position: relative;
 }
@@ -90,3 +119,97 @@ article {
     width: 125px;
     margin-left: 12px;
 }
+
+/* --- NEW HISTORY SECTION: 3-Column Grid --- */
+.history h2 {
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.history-content {
+    display: grid;
+    grid-template-columns: 1fr 220px 1fr;
+    gap: 16px;
+    align-items: center;
+}
+
+.history-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.history-content p {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+/* --- NEW ADVENTURES SECTION: 5 Horizontal Figures --- */
+.adventures h2 {
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.adventure-gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.adventure-gallery figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.adventure-gallery img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.adventure-gallery figcaption {
+    margin-top: 6px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: var(--accent1-color);
+}
+
+/* --- UPGRADED FOOTER: Flexbox with Social Icons Right --- */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 12px 20px;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 12px;
+    margin: 0;
+    padding: 0;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 30px;
+    height: 30px;
+    display: block;
+}
+
+
+
